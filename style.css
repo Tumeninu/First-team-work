@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,500;0,600;1,400;1,500;1,600&display=swap');
+
+
+  @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -16,14 +20,17 @@ body {
 #Navbar {
    display: flex;
    border: 1px solid white;
-   /* width: 100vw; */
+   width: 100%;
    height: 9vh; 
    background-color: white;
    align-items: center;
    justify-content: space-between;
-   margin: 0 10% 0 10%;
+   padding: 30px 50px;
+   /* margin: 0 10% 0 10%; */
    font-weight: bolder;
    font-size: 17px;
+   z-index:10;
+   position: relative;
 }
 
 
@@ -44,16 +51,20 @@ ul a:hover {
 ul {
     display: flex; 
      align-items: center; 
-     justify-content: space-between; 
-     width: 20vw; 
+     /* justify-content:space-between;  */
+     /* width: 20vw;  */
      margin-left: 54%; 
-     letter-spacing: 2px;
+     /* letter-spacing: 2px; */
      /* border: 2px solid red; */
+     width:70%
+}
+
+li{
+    margin-right:20px
 }
 #second {
-    /* margin-right: 300px; */
-    width: 10%;
-    height: 48%;
+    width: 30%;
+    height: 7vh;
     font-size: 14px;
     font-weight: 700;
     color: hsl(256, 26%, 20%);
@@ -66,5 +77,146 @@ ul {
     background-color: hsl(256, 26%, 20%);
     color: white;
     
+}
+
+
+hr{
+    width:30%
+}
+
+h1{
+    font-family: 'DM Serif Display', serif;
+
+    font-size: 50px;
+    font-weight: 400;
+
+}
+
+#parent-Container{
+    width:100%;
+    height:95vh;
+    color:#fff;
+    background-color: hsl(256, 26%, 20%);
+    display: grid;
+    position: relative;
+
+
+}
+
+#parent-Container:before{
+    content:url(./bg-pattern-intro-left-desktop.svg);
+
+    position: absolute;
+    top:395px
+}
+
+#img-Child{
+    position:absolute;
+    right:160px;
+    top:80px;
+}
+
+#parent-Container:after{
+    content:url(./bg-pattern-intro-right-desktop.svg);
+    position: absolute;
+    top:-90px;
+    right:0
+
+    
+    
+   
+}
+
+#first-Child{
+    width:40%;
+    height:65vh;
+    margin: 50px 150px;
+    padding:30px 25px
+    
+}
+
+
+#p-Child,#h1-Child{
+    margin-top: 20px;
+}
+
+.body-Btn{
+    margin-top: 50px;
+    padding:8px 20px;
+    background-color:#ffffff00;
+    color:#ffff;
+    border:1px solid #FFF
+}
+.body-Btn-2{
+    padding:8px 20px;
+    background-color:#ffffff00;
+    color:#ffff;
+    border:1px solid #FFF
+}
+
+
+#h1-second-P{
+    margin-top: 300px;
+    margin-bottom: -250px;
+    margin-left: 200px;
+
+}
+
+
+#second-psChild{
+    margin: 300px 200px 100px ;
+    width:70%;
+    display:flex;
+    text-align: justify;
+    line-height: 1.4;
+
+}
+
+h2{
+   margin: 10px 0px 10px 0px;
+   font-family: 'DM Serif Display', serif;
+}
+
+#affordable-Prices{
+    padding:0px 50px 0px 50px
+}
+
+#second-hr{
+    width:10%;
+    margin-top: 300px;
+    margin-bottom: -250px;
+    margin-left: 200px;
+}
+
+.p-2{
+    color:hsl(216, 30%, 68%)
+}
+
+#third-Parent{
+    
+    color:#FFF;
+    display:grid
+}
+
+#third-Pchild{
+    background-color: hsl(256, 26%, 20%);
+    margin: 0 auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:70%;
+    padding: 1px 50px;
+    background-image: url(./bg-pattern-how-we-work-desktop.svg);
+    background-repeat: no-repeat;
+
+    background-position-x: 510px;
+    background-position-y: -40px;
+  
+    
+}
+
+#h1-thirdChild{
+width:60%;
+text-align:start;
 }
 
