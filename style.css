@@ -135,6 +135,9 @@ h1{
     padding:30px 25px
     
 }
+#h1-Child, #h1-thirdChild{
+    color:#FFF
+}
 
 
 #p-Child,#h1-Child{
